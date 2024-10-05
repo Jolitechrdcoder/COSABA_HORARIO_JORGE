@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario Escolar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./cosaba.ico"> 
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="cosaba.png" alt="Logo" />
+        <div id="current-datetime"></div>
+        <div id="countdown">00:00</div> <!-- Cronómetro -->
+        <h1>Horario Escolar</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time / Hora</th>
+                    <th>Monday / Lunes</th>
+                    <th>Tuesday / Martes</th>
+                    <th>Wednesday / Miércoles</th>
+                    <th>Thursday / Jueves</th>
+                    <th>Friday / Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7:10 a.m - 7:25 a.m</td>
+                    <td>Ceremonia de Bandera</td>
+                    <td>Intro. Emocional</td>
+                    <td>Ceremonia de Bandera</td>
+                    <td>Intro. Emocional</td>
+                    <td>Intro. Emocional</td>
+                </tr>
+                <tr>
+                    <td>7:25 a.m - 8:10 a.m</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="robotica-7mo">Robótica (7mo B)</td>
+                    <td class="robotica-9no">Robótica (9no B)</td>
+                    <td class="robotica-9no">Robótica (9no A)</td>
+                    <td class="hora-libre">Hora libre</td>
+                </tr>
+                <tr>
+                    <td>8:10 a.m - 8:55 a.m</td>
+                    <td class="robotica-6to">Robótica (6to B)</td>
+                    <td class="robotica-8vo">Robótica (8vo A)</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="informatica-4to">Informática (4to A)</td>
+                    <td class="robotica-7mo">Robótica (7mo C)</td>
+                </tr>
+                <tr>
+                    <td>8:55 a.m - 9:40 a.m</td>
+                    <td class="robotica-3ro">Robótica (3ro B)</td>
+                    <td class="robotica-8vo">Robótica (8vo B)</td>
+                    <td class="informatica-6to">Informática (6to B)</td>
+                    <td class="informatica-5to">Informática (5to B)</td>
+                    <td class="informatica-6to">Informática (6to A)</td>
+                </tr>
+                <tr>
+                    <td>9:40 a.m - 10:10 a.m </td>
+                    <td class="receso">Receso</td>
+                    <td class="receso">Receso</td>
+                    <td class="receso">Receso</td>
+                    <td class="receso">Receso</td>
+                    <td class="receso">Receso</td>
+                </tr>
+                <tr>
+                    <td>10:10 a.m - 10:55 a.m </td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="robotica-2do">Robótica (2do A)</td>
+                    <td class="robotica-2do">Robótica (2do B)</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="informatica-3ro">Informática (3ro B)</td>
+                </tr>
+                <tr>
+                    <td>10:55 a.m - 11:05 a.m</td>
+                    <td class="receso">Receso</td>
+                    <td class="receso">Receso</td>
+                    <td class="receso">Receso</td>
+                    <td class="informatica-3ro">Informática (3ro A)</td>
+                    <td class="receso">Receso</td>
+                </tr>
+                <tr>
+                    <td>11:05 a.m - 11:50 a.m</td>
+                    <td class="robotica-4to">Robótica (4to B)</td>
+                    <td class="robotica-4to">Robótica (4to A)</td>
+                    <td class="robotica-1ro">Robótica (1ro A)</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="robotica-1ro">Robótica (1ro A)</td>
+                </tr>
+                <tr>
+                    <td>11:50 a.m - 12:35 a.m</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="robotica-6to">Robótica (6to A)</td>
+                    <td class="informatica-2do">Informática (2do A)</td>
+                    <td class="robotica-7mo">Robótica (7mo A)</td>
+                </tr>
+                <tr>
+                    <td>12:35 a.m - 1:20 p.m</td>
+                    <td class="robotica-3ro">Robótica (3ro A)</td>
+                    <td class="robotica-5to">Robótica (5to A)</td>
+                    <td class="robotica-1ro">Robótica (1ro B)</td>
+                    <td class="informatica-2do">Informática (2do B)</td>
+                    <td class="robotica-1ro">Robótica (1ro B)</td>
+                </tr>
+                <tr>
+                    <td>1:20 p.m - 2:00 p.m</td>
+                    <td class="robotica-5to">Robótica (5to B)</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="hora-libre">Hora libre</td>
+                    <td class="informatica-5to">Informática (5to A)</td>
+                    <td class="informatica-4to">Informática (4to B)</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="reset-button" id="resetButton">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

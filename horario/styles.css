@@ -1,0 +1,142 @@
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 100%;
+    padding: 20px;
+    overflow-x: auto;
+}
+/* Colores para cada materia o actividad */
+.robotica-1ro { background-color: #0741ffb7; }
+.robotica-2do { background-color: #bd7202; }
+.robotica-3ro { background-color: #4CAF50; }
+.robotica-4to { background-color: #3F51B5; }
+.robotica-5to { background-color: #9C27B0; }
+.robotica-6to { background-color: #017483; }
+.robotica-7mo { background-color: #8BC34A; }
+.robotica-8vo { background-color: #E91E63; }
+.robotica-9no { background-color: #607D8B; }
+.informatica-1ro { background-color: #FF9800; }
+.informatica-2do { background-color: #03A9F4; }
+.informatica-3ro { background-color: #009688; }
+.informatica-4to { background-color: #795548; }
+.informatica-5to { background-color: #CDDC39; }
+.informatica-6to { background-color: #673AB7; }
+.hora-libre { background-color: #ffffff; }
+.receso { background-color: #9e0c01; color: white; }
+h1{
+    text-align: center;
+}
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Asegura que la tabla no se comprima demasiado */
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #030303;
+    color: white;
+}
+/* Logo */
+#logo {
+    display: block; /* Asegura que el logo se comporte como un bloque */
+    margin: 0 auto 20px; /* Centra el logo horizontalmente */
+    max-width: 100px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Estilo para celda marcada */
+.marked {
+    background-color: rgba(106, 138, 75, 0.5);
+}
+
+/* Estilo de puntero para saber que se puede hacer clic */
+td {
+    cursor: pointer;
+}
+
+/* Estilos para el botón */
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Nuevo estilo para días no actuales */
+.not-current-day {
+    opacity: 0.3;
+}
+
+/* Estilo para la fecha y hora actual */
+#current-datetime {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 5px;
+    }
+    #current-datetime {
+        font-size: 1em;
+    }
+    #logo {
+        width: 80px; /* Tamaño reducido para pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    table {
+        font-size: 10px;
+    }
+    th, td {
+        padding: 3px;
+    }
+    #current-datetime {
+        font-size: 0.9em;
+    }
+    .reset-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    #logo {
+        width: 60px; /* Más pequeño para pantallas pequeñas */
+    }
+   
+}
+
+
+/* Estilo para el cronómetro */
+#countdown {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+    color: #F44336; /* Color para el texto del cronómetro */
+}
+
